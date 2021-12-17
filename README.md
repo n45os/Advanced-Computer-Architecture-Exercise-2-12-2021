@@ -10,7 +10,7 @@ The total number of L1 cache replacements is different on every simulation. That
  
 The CPU accesses the L2 cache when some information cannot be retrieved by the L1 cache. So we could find the number of the L2 accesses finding the L1 cache misses.
 ### 2. Observations on the produced stats
-![benchmark stats](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_memoryRAM.png)
+![benchmark stats](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-2-12-2021/blob/main/image1_benchmarks.png)
 As we look at the graph we can make some interesting observations. Firstly, while the specmcf benchmark has the worst performance (by a lot) when it comes to L1 i cache miss rate, it is not the worst performing benchmark (contrary, it performs the best CPI-wise). The worst performing benchmark is the specsjeng, which has the biggest L2 cache miss rate. That’s because the L2 cache is way slower than the L1 and the lack of performance on it can make the CPU very slow.
 We can also see that MinorCPU does a great job handling specbzip benchmark keeping balanced performance on the memory.
 ### 3. Changing the CPU clock
