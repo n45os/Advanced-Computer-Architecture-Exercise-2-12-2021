@@ -4,7 +4,7 @@ _Bountioukos-Spinaris Athanasios, Semester 7, 2021, AUTh_
 ## Sector 1. Executing SPEC CPU2006 Benchmarks
 ### 1. General stats
 #### Why the commited and the simulated instructions are different?
-Probably I couldnt understand fully the question, but the commtes and the simulated instructions were the same on all benchmarks.
+In both cases obsereved, these numbers were the same (**100000000**). I used the numbers of `sim_insts` and `system.cpu.committedInsts`. Probably I couldnt understand fully the question, but the commited and the simulated instructions were the same on all benchmarks.
 #### Total number of L1 data cache replacements and how could we fild the number of L2 cache accesses without looking at its stat?
 The total number of L1 cache replacements is different on every simulation. That's pretty natural because the opperation that each benchmark uses vary. 
  
@@ -28,6 +28,10 @@ With this approach I could get some usefull information about the first benchmar
 ### Another approach
 According to our measurements of the previous questions, we will run about 20 times each benchmark with values that the previous measurements could stabilise. For example, specsjeng benchmark has a bad performance for L1 data cache and the L2 cache so we will increase these values.
 
+In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
+
+These are the numbers of the different parameters tested on the specbzip benchmark. The numbers of the rest of the benchmarks are on the repository:
+![specbzip with different parameters](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-2-12-2021/blob/main/graph_sector_2_specbzip.png)
 In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
 ## Sector 3. Performance/Cost Optimisation
 ### Making the cost formula
