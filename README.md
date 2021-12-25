@@ -31,8 +31,28 @@ According to our measurements of the previous questions, we will run about 20 ti
 In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
 
 These are the numbers of the different parameters tested on the specbzip benchmark. The numbers of the rest of the benchmarks are on the repository:
-![specbzip with different parameters](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-2-12-2021/blob/main/graph_sector_2_specbzip__.png)
+
 In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
+
+An example of these measurements is below (from the benchmark **speclibm**):
+|{cpi}   |{l1ds}|{l1is}|{l2s}|{l1da}|{l1ia}|{l2a}|{cl}|
+|--------|------|------|-----|------|------|-----|----|
+|3.420838|128   |64    |4096 |2     |4     |8    |64  |
+|3.420838|128   |64    |4096 |2     |4     |16   |64  |
+|2.496445|128   |64    |4096 |2     |4     |8    |128 |
+|2.496445|128   |64    |4096 |2     |4     |16   |128 |
+|3.420838|128   |128   |4096 |2     |4     |8    |64  |
+|3.420838|128   |128   |4096 |2     |4     |16   |64  |
+|2.496445|128   |128   |4096 |2     |4     |8    |128 |
+|2.496445|128   |128   |4096 |2     |4     |16   |128 |
+|3.420838|256   |64    |4096 |2     |4     |8    |64  |
+|3.420838|256   |64    |4096 |2     |4     |16   |64  |
+|2.496445|256   |64    |4096 |2     |4     |8    |128 |
+|2.496445|256   |64    |4096 |2     |4     |16   |128 |
+|3.420838|256   |128   |4096 |2     |4     |8    |64  |
+|3.420838|256   |128   |4096 |2     |4     |16   |64  |
+|2.496445|256   |128   |4096 |2     |4     |8    |128 |
+|2.496445|256   |128   |4096 |2     |4     |16   |128 |
 ## Sector 3. Performance/Cost Optimisation
 ### Making the cost formula
 We need to focus to 3 parameters that affect the performance/cost ratio:
