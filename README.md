@@ -31,7 +31,7 @@ According to our measurements of the previous questions, we will run about 20 ti
 In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
 
 These are the numbers of the different parameters tested on the specbzip benchmark. The numbers of the rest of the benchmarks are on the repository:
-![specbzip with different parameters](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-2-12-2021/blob/main/graph_sector_2_specbzip_.png)
+![specbzip with different parameters](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-2-12-2021/blob/main/graph_sector_2_specbzip__.png)
 In order to get it done, I made a python script that gave all these values to the simulations and ran them one by one. Then the CPIs are collected in a file and I can see the performance of the simulations.
 ## Sector 3. Performance/Cost Optimisation
 ### Making the cost formula
